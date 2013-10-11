@@ -36,3 +36,18 @@ gcc -Wall main.c hello.c -o newhello.o
 3. 如果使用尖括号到`include`，则是从系统头文件目录查找
   * 常见到系统头文件目录：`/usr/include` 或者 `/usr/local/include/`
 
+## Verbose Compliation
+`-v`参数  可以打印出更加详细的信息，当进行排错时，非常有帮助。例如：
+
+```bash
+gcc -v -Wall verbo.c -o verbo
+```
+
+## 独立文件编译
+如果程序很大，源文件很多，比如kernel项目，则需要将文件编译成目标文件
+
+TODO 第四个8分钟
+
+
+
+
