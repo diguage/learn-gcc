@@ -29,4 +29,10 @@ export LANG=C
 gcc -Wall main.c hello.c -o newhello.o
 ```
 
-注意，不需要将头文件加入编译文件列表中。
+注意:
+
+1. 不需要将头文件加入编译文件列表中。
+2. 使用双引号的`include`，则是从当前目录下查找
+3. 如果使用尖括号到`include`，则是从系统头文件目录查找
+  * 常见到系统头文件目录：`/usr/include` 或者 `/usr/local/include/`
+
