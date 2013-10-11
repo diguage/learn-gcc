@@ -16,4 +16,17 @@ gcc -Wall <FileName> -o <OutFileName>
 export LANG=C
 ```
 
-TODO 第三节20分钟
+当程序比较大到时候，需要把程序写到多个程序中，这时需要定义两个文件：
+
+* `fileName.h` 用于定义函数声明；
+* `fileName.c` 用于实现书写函数到实现
+
+定义完成后，在使用这个函数到文件首部，使用`#include "fileName.h"`将函数声明引入进来。注意：函数实现到文件中也要引入进来
+
+多个程序到编译，只需要将多个程序加入到编译列表即可。例如
+
+```bash
+gcc -Wall main.c hello.c -o newhello.o
+```
+
+注意，不需要将头文件加入编译文件列表中。
