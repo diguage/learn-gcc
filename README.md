@@ -1,5 +1,7 @@
-GCC入门使用教程的练习以及笔记
 # GCC 入门使用教程
+--GCC入门使用教程的练习以及笔记
+
+// 没有看第一节和第二节
 
 ```bash
 gcc -Wall <FileName> -o <OutFileName>
